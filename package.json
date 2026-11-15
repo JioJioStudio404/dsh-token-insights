@@ -1,0 +1,51 @@
+{
+  "name": "dsh-token-insights",
+  "version": "0.1.0",
+  "description": "Token usage for DeepSeek Harness: a 「用量」 tab with the tokens of every model call DeepSeek Harness logged (subagent sessions and compaction included) — totals, cache hit rate, composition, a calendar of daily usage, the trend, providers and their models, and active hours — counted locally from the session logs. Display only.",
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./typert": {
+      "default": "./lib/typert.host.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "scripts": {},
+  "engines": {
+    "node": ">=24.9",
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tokens",
+    "usage",
+    "statistics"
+  ],
+  "license": "MIT"
+}
