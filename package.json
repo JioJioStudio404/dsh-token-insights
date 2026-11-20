@@ -1,6 +1,6 @@
 {
   "name": "dsh-token-insights",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Token usage for DeepSeek Harness: a 「用量」 tab with the tokens of every model call DeepSeek Harness logged (subagent sessions and compaction included) — totals, cache hit rate, composition, a calendar of daily usage, the trend, providers and their models, and active hours — counted locally from the session logs. Display only.",
   "icon": "icon.svg",
   "type": "module",
